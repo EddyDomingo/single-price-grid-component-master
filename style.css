@@ -1,0 +1,148 @@
+/* Global Variables */
+/* Global Styles */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.75rem;
+  color: #2ab2af;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.sub-title {
+  color: #c0df34;
+}
+
+.p-text {
+  color: #98a6bd;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Layout */
+.main-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em;
+  -webkit-box-shadow: 5px 5px 15px -2px #5B5B5B;
+  box-shadow: 5px 5px 15px -2px #5B5B5B;
+  border-radius: 5px;
+}
+
+.top-section {
+  width: 100%;
+  padding: 1.2em;
+}
+
+.secondary-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text-wrapper {
+  padding: 1em 1.5em;
+  color: #e5eff5;
+}
+
+.mid-section {
+  background: #2ab2af;
+  padding-bottom: 1em;
+}
+
+.final-section {
+  background: #4abebd;
+}
+
+/* Components */
+.btn {
+  text-decoration: none;
+  color: #e5eff5;
+  background: #c0df34;
+  padding: 0.5em 6em;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px -2px #5B5B5B;
+  box-shadow: 5px 5px 15px -2px #5B5B5B;
+}
+
+.full-access {
+  margin-bottom: 2em;
+}
+
+/* Media Queries */
+@media (min-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+  .main-flex {
+    max-width: 850px;
+  }
+  .secondary-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mid-section,
+  .final-section {
+    width: 50%;
+  }
+  body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .btn {
+    padding: 1em 8em;
+  }
+  .text-wrapper {
+    padding: 2em 1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,155 @@
+/* Global Variables */
+$Cyan: hsl(179, 62%, 43%);
+$LightCyan: rgb(74,190,189);
+$BrightYellow: hsl(71, 73%, 54%);
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+
+$fontSize16: 1rem;
+$fontSize18: 1.125rem;
+$fontSize20: 1.25rem;
+$fontSize24: 1.5rem;
+$fontSize28: 1.75rem;
+$fontSize32: 2rem;
+
+$fontWeight400: 400;
+$fontWeight700: 700;
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+/* Global Styles */
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: $fontSize16;
+    
+}
+
+/* Typography */
+
+h1{
+    font-size: $fontSize28;
+    color: $Cyan;
+}
+
+h2{
+    font-size: $fontSize24;
+}
+
+span{
+    font-size: $fontSize28;
+    font-weight: $fontWeight700;
+}
+
+.sub-title{
+    color: $BrightYellow;
+}
+
+.p-text{
+    color: $GrayishBlue;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+
+
+/* Layout */
+
+.main-flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    -webkit-box-shadow: 5px 5px 15px -2px #5B5B5B; 
+    box-shadow: 5px 5px 15px -2px #5B5B5B;
+    border-radius: 5px;
+}
+
+.top-section{
+    width:100%;
+    padding: 1.2em;
+}
+
+.secondary-flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-wrapper{
+    padding: 1em 1.5em;
+    color: $LightGray;
+}
+
+.mid-section{
+    background: $Cyan;
+    padding-bottom: 1em; 
+
+}
+
+.final-section{
+    background: $LightCyan;
+}
+
+/* Components */
+
+.btn{
+    text-decoration: none;
+    color: $LightGray;
+    background: $BrightYellow;
+    padding: 0.5em 6em;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 15px -2px #5B5B5B; 
+    box-shadow: 5px 5px 15px -2px #5B5B5B;
+}
+
+.full-access{
+    margin-bottom: 2em;
+}
+
+/* Media Queries */
+
+@media (min-width: 650px){
+    h1{
+        font-size: $fontSize32;
+    }
+    
+    h2{
+        font-size: $fontSize28;
+    }
+    p{
+        font-size: $fontSize18;
+    }
+    .main-flex{
+        max-width: 850px;
+    }
+    .secondary-flex{
+        flex-direction: row;
+    }
+    .mid-section,
+    .final-section{
+        width:50%;
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        padding: 1em 8em;
+    }
+    .text-wrapper{
+        padding: 2em 1.5em;
+    }
+
+}
